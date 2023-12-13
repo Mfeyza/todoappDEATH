@@ -5,9 +5,10 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
-  const [tasks, setTasks] = useState(savedTasks);
+  const [tasks, setTasks] = useState([{
+    title:"Developer olmak"
+  }],savedTasks);
   useEffect(() => {
-    // Her tasks değiştiğinde localStorage'a kaydet
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);
 
