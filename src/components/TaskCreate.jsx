@@ -3,29 +3,28 @@ import img2 from "./pngwing.com.png"
 
 
 function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
-  const [title, setTitle] = useState(task ? task.title : '');
-  const [taskDesc, setTaskDesc] = useState(task ? task.taskDesc : '');
+  const [title, setTitle] = useState(task ? task.title : ''); //!task yoksa veya nullsa boş string ata
+  
 
   const handleChange = (e) => {
     setTitle(e.target.value);
   };
-  const handleTaskChange = (e) => {
-    setTaskDesc(e.target.value);
-  };
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim() === '') {
       alert('Boş bir değer giremezsiniz.');
       return;
     }
-    if (taskformUpdate) {
-      onUpdate(task.id, title, taskDesc);
-    } else {
-      onCreate(title, taskDesc);
+    if(task?.id){
+      onUpdate(task.id,title)
+    }else{
+      onCreate(title)
     }
+   
 
     setTitle('');
-    setTaskDesc('');
+    
   };
 
   return (

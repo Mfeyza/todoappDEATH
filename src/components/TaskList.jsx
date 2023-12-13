@@ -1,6 +1,6 @@
 import TaskShow from './TaskShow';
 
-function TaskList({ tasks, onDelete, onUpdate }) {
+function TaskList({ tasks, onDelete, onUpdate,onToggle }) { //! tasks-görevlerdizisi , silme fonksiyonu, güncelleme fonksiyonu
   return (
     <div className="task-list">
       {tasks.map((task, index) => {
@@ -10,6 +10,7 @@ function TaskList({ tasks, onDelete, onUpdate }) {
             task={task}
             onDelete={onDelete}
             onUpdate={onUpdate}
+            onToggle={onToggle}
           />
         );
       })}
