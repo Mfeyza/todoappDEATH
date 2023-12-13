@@ -1,38 +1,183 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+body{
+
+  background-image: url("https://media2.giphy.com/media/oE2SDT8zIlUqb1eG7n/giphy.gif?cid=ecf05e47dhw3s5izu1jfnbivb3raei1w0r4h1whzjz7ozs56&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Gamja Flower', sans-serif;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.tasktitle{
+  font-size: 2rem;
+}
+.fa{
+  font-size: 1.5rem;
+  display: flex;
+  gap:1rem;
+}
+.taskshow{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: row;
+  
+  
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.show{
+  display: flex;
+  
+  max-width: 600px;
+  border-radius: 20px;
+  
+  
+  
+}
+.taskinput{
+  border-radius: 1rem;
+  background-color: rgba(240, 248, 255, 0.19);
+}
+.addbtn{
+  border-radius: 0.5rem;
+  background-color: rgb(24, 23, 22);
+  color: rgb(232, 223, 213);
+  font-size:1.8rem;
+  
+}
+.addbtn:hover {
+    background-color: rgba(71, 74, 74, 0.48) ;
+    transform: scale(1.1);
+    animation: shake 0.7s ease-in-out infinite;
+    transition: 0.6s ;
+}
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0px);
   }
-  to {
-    transform: rotate(360deg);
+  25%, 75% {
+      transform: translateX(-15px);
   }
+  50% {
+      transform: translateY(5px);
+  }
+}
+.task-list{
+  border-radius: 20px;
+  background-color: transparent;
+  max-width:50rem;
+  width: 50rem;
+}
+  
+.taskinput{
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+
+
+  }
+  .fav{
+    font-size: 2rem;
+  }
+  .taskform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .taskaddinput{
+    border-radius: 20px;
+    width:25rem;
+    height: 3rem;
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: 2rem;
+  }
+  
+  .ptitle {
+    margin-top: 13rem;
+    display: inline-block;
+    animation: p 1.8s infinite; /* Keyframes adını doğru yazdığınızdan emin olun */
+    font-size: 4rem;
+    font-weight: 100;
+    text-shadow: 10px 5px 7px #99362b  ;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight:bold !important;
+    color: rgb(74, 62, 62);
+  }
+  
+  .ptitle:hover {
+    color: #5d1818;
+  }
+  
+  @keyframes p {
+    0% {
+      opacity: 0.3;
+      color: rgb(18, 18, 17);
+    }
+  
+    50% {
+      opacity: 0.9;
+      color: #bf6f6f;
+    }
+  
+    100% {
+      opacity: 1;
+      color: rgb(80, 72, 72);
+    }
+  }
+  .titlep{
+    color: aliceblue;
+  }
+  .fa1,.fa2{
+    font-size:2rem;
+    cursor: pointer;
+  }
+  .img1:hover{
+    transform: scale(1.3);
+    transition: 0.6s;
+
+  }
+  .img2:hover{
+    transform: scale(1.3);
+    transition: 0.6s;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .task-list {
+      width: 90%;
+    }
+  
+    .show {
+      max-width: 90%;
+    }
+    .ptitle {
+      font-size: 2rem;
+      margin-top: 5rem; 
+  }
+}
+
+.img1,.img2{
+  width: 3rem;
+  height:3rem;
+  cursor: pointer;
+  
+}
+.mfy{
+  color: #5d1818;
 }
