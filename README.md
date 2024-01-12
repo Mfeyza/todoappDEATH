@@ -32,7 +32,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 
 
-
+ 
+ <img src="./Ekran görüntüsü 2024-01-12 192021.png"  width="30.5%" height="450" />
 
 
 
