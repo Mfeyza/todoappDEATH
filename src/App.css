@@ -182,3 +182,33 @@ body{
   color: #9c5757;
   
 }
+@media only screen and (max-width: 768px) {
+  .task-list {
+    width: 95%;
+  }
+  .show {
+    max-width: 95%;
+  }
+  .ptitle {
+    font-size: 3rem;
+  }
+
+}@media only screen and (max-width: 768px) {
+  .taskshow {
+    flex-direction: column;
+  }
+}@media only screen and (max-width: 600px) {
+  .tasktitle, .taskinput, .taskaddinput, .addbtn {
+    font-size: 1.5rem;
+  }
+  .img1, .img2 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+}@media only screen and (max-width: 600px) {
+  .img1, .img2 {
+    width: 2rem;
+    height: 2rem;
+  }
+}
