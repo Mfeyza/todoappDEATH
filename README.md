@@ -1,3 +1,66 @@
+To-Do List Application
+
+
+
+
+Overview
+This is a To-Do List application developed using React and Material-UI. It allows users to create, update, delete, and mark tasks as completed. The application has a playful and engaging interface with a theme of "things to do before you die".
+
+
+
+
+Features
+Create Tasks: Add new tasks to your to-do list.
+Update Tasks: Edit the title of existing tasks.
+Delete Tasks: Remove tasks from the list.
+Mark Tasks as Completed: Double click on a task to mark it as completed or uncompleted.
+Local Storage: Tasks are stored in the browser's local storage, ensuring that your data isn't lost when you close the application.
+
+
+Technologies Used
+React
+Material-UI
+Local Storage for data persistence
+
+
+Author
+Developed by: MFY
+
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
